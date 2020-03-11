@@ -14,7 +14,7 @@ This program contains an algorithm that creates a new object to represent the Ma
 
 ## What's so cool about this?
 
-My favorite part of the program is this iterator. It took me **two hours** to figure out! I first attempted it using nested for loops... This is way better and I'm happy with how it turned out:
+My favorite part of the program is this iterator. I first attempted it using nested for loops... This is way better and I'm happy with how it turned out:
 
 ```Javascript
 numbersArray.forEach( v => {
