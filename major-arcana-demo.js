@@ -117,4 +117,6 @@ console.log(newEntriesArray);
 const romanArcana = Object.fromEntries(newEntriesArray);
 
 // Behold!
-console.log(romanArcana);
+for (card in romanArcana) {
+	console.log(`${card} is number ${romanArcana[card]}.`)
+}
