@@ -102,24 +102,24 @@ console.log(numbersArray);
 
 
 // We will store our entries in a new array
-let newDeck = []
+const newEntriesArray = []
 
 // And populate it with sub-arrays whose elements are the name and roman numeral
 // This is my favorite part of the program :)
 
 numbersArray.forEach( v => {
-	newDeck.push([keysArray[v], romanArray[v]]);
+	newEntriesArray.push([keysArray[v], romanArray[v]]);
 	}
 );
 
-console.log(newDeck);
+console.log(newEntriesArray);
 
 // the above output looks a lot like entriesArray!
 // indeed, every element is a sub-array whose elements are the key and value of each card
 // thus, we can create a proper Object from newDeck, by using the reverse of Object.entries
 
 // Return an object with properties taken from an array's key-value sub-arrays.
-const romanArcana = Object.fromEntries(newDeck);
+const romanArcana = Object.fromEntries(newEntriesArray);
 console.log(romanArcana);
 
 // Alas, at this time, this last method is NOT SUPPORTED BY NODE.JS and will not run in repl.it
