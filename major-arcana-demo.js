@@ -102,7 +102,7 @@ console.log(numbersArray);
 
 
 // We will store our entries in a new array
-const newEntriesArray = []
+const newEntriesArray = [];
 
 // And populate it with sub-arrays whose elements are the name and roman numeral
 // This is my favorite part of the program :)
