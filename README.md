@@ -6,15 +6,11 @@ This program demonstrates Array and Object manipulation with built-in methods an
 
 The `Tarot Major Arcana` are a subset of cards within the Tarot Deck and can be represented in an object data structure, also known as a dictionary or hash.
 
-The `majorArcana` object is comprised of a series of key-value pairs.
-
-Each key is string data and each value is numeral data.
-
-Most of the object methods transpose its data into an array of some sort.
+The `majorArcana` object is comprised of a series of key-value pairs, where each key is string data and each value is numeral data.
 
 This program contains an algorithm that creates a new object to represent the Major Arcana with *only* string data as its keys and values (ie. convert Arabic numerals into Roman numerals).
 
-My favorite part of the program is this iterator:
+My favorite part of the program is this iterator. It took me **two hours** to figure out! I first attempted it using nested for loops... This is way better and I'm happy with how it turned out:
 
 ```Javascript
 numbersArray.forEach( v => {
