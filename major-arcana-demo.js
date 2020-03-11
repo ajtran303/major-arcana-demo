@@ -111,7 +111,7 @@ console.log(newEntriesArray);
 
 // The above output looks a lot like entriesArray!
 // Indeed, every element is a sub-array whose elements are the key and value of each card
-// Hence, we can create a proper Object from newDeck, by using the reverse of Object.entries
+// Hence, we can create a proper Object from newEntriesArray, by using the reverse of Object.entries
 
 // Return an object with properties taken from an array's key-value sub-arrays.
 const romanArcana = Object.fromEntries(newEntriesArray);
