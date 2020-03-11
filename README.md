@@ -1,14 +1,18 @@
-# major-arcana-demo
+# major-arcana-demo.js
 
-Check it out: https://repl.it/@Goth/arrayandobjectmethodsjs
+## What is this?
 
 This program demonstrates Array and Object manipulation with built-in methods and examples of their use with an abstraction of a real-world object.
 
 The `Tarot Major Arcana` are a subset of cards within the Tarot Deck and can be represented in an object data structure, also known as a dictionary or hash.
 
+## What does it do?
+
 The `majorArcana` object is comprised of a series of key-value pairs, where each key is string data and each value is numeral data.
 
 This program contains an algorithm that creates a new object to represent the Major Arcana with *only* string data as its keys and values (ie. convert Arabic numerals into Roman numerals).
+
+## What's so cool about this?
 
 My favorite part of the program is this iterator. It took me **two hours** to figure out! I first attempted it using nested for loops... This is way better and I'm happy with how it turned out:
 
@@ -19,11 +23,9 @@ numbersArray.forEach( v => {
 );
 ```
 
-Reader be aware: the last and most crucial part of this program `Object.fromEntries` is not supported in `node.js` and it will not run in node.js.
-
 ## TLDR
 
-### Before
+### My algorithm takes this:
 
 ```JavaScript
 const majorArcana = {
@@ -52,10 +54,10 @@ const majorArcana = {
 };
 ```
 
-### After
+### And turns it into that:
 
 ```JavaScript
-const majorArcana = {
+const romanArcana = {
 	"The Fool": "0",
 	"The Magician": "I",
 	"The High Priestess": "II",
@@ -80,3 +82,7 @@ const majorArcana = {
 	"The World": "XXI"
 };
 ```
+
+Check it out: https://repl.it/@Goth/arrayandobjectmethodsjs
+
+Reader be aware! The `Object.fromEntries()` method is not supported yet by `node.js` and has been commented out in the above `repl.it` to keep everything else running.

@@ -115,7 +115,6 @@ console.log(newEntriesArray);
 
 // Return an object with properties taken from an array's key-value sub-arrays.
 const romanArcana = Object.fromEntries(newEntriesArray);
-console.log(romanArcana);
 
-// Alas, at this time, this last method is NOT SUPPORTED BY NODE.JS and will not run in repl.it
-// It will totally work though, I promise!
+// Behold!
+console.log(romanArcana);
