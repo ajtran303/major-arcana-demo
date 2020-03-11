@@ -85,12 +85,7 @@ const romanArray = [
 	"XVI",
 	"XVII",
 	"XVIII",
-	"XIV",
-	"XV",
-	"XVI",
-	"XVII",
-	"XVIII",
-	"XXIV",
+	"XIX",
 	"XX",
 	"XXI"
 ];
@@ -114,9 +109,9 @@ numbersArray.forEach( v => {
 
 console.log(newEntriesArray);
 
-// the above output looks a lot like entriesArray!
-// indeed, every element is a sub-array whose elements are the key and value of each card
-// thus, we can create a proper Object from newDeck, by using the reverse of Object.entries
+// The above output looks a lot like entriesArray!
+// Indeed, every element is a sub-array whose elements are the key and value of each card
+// Hence, we can create a proper Object from newDeck, by using the reverse of Object.entries
 
 // Return an object with properties taken from an array's key-value sub-arrays.
 const romanArcana = Object.fromEntries(newEntriesArray);
